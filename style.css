@@ -119,16 +119,18 @@ h4 {
     }
 }
 
-.upbtn {
-    font-size: 30px;
-    background-color: #ffffff8f;
-    border: none;
-    border-radius: 50px;
-    padding: 10px 22px;
+.upbtn{
+    height: 45px;
 }
 #reload,#start{
     padding: 5px 10px;
     color: black;
+}
+.btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
 }
 
 
