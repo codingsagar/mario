@@ -1,8 +1,13 @@
+@font-face {
+  font-family: marioFont;
+  src: url(marioFont.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Super Mario World Text Box";
+    font-family: "marioFont";
     color: white;
     overflow: hidden;
 }
