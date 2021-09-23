@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Super Mario World Text Box";
+    color: white;
+    overflow: hidden;
+}
+
+h4 {
+    padding-top: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.sky {
+    /* background-color: rgb(0, 132, 255); */
+    background-color: #5d94fb;
+    height: 70vh;
+    position: relative;
+}
+
+.sky #mario {
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 15vw;
+}
+
+.sky #enemy {
+    height: 55px;
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    overflow: hidden;
+}
+
+.enemy {
+    animation: rtl 2s linear infinite;
+}
+
+.grass {
+    background-color: rgb(20, 201, 20);
+    height: 2vh;
+}
+
+.land {
+    /* background-color: brown; */
+    background-color: #8f3a09;
+    height: 28vh;
+    text-align: center;
+    line-height: 28vh;
+}
+
+.score {
+    padding-top: 15px;
+    color: white;
+    text-align: center;
+}
+
+.jump {
+    animation: jump 0.8s 1;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 200px;
+    }
+    60% {
+        bottom: 190px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes rtl {
+    0% {
+        right: 0;
+    }
+    50% {
+        right: 50vw;
+    }
+    60% {
+        right: 60vw;
+    }
+    100% {
+        right: 100vw;
+    }
+}
+
+.gameOver {
+    animation: gameOver 1s linear 1;
+}
+
+@keyframes gameOver {
+    0% {
+        bottom: 0px;
+    }
+    25% {
+        bottom: 0px;
+    }
+    50% {
+        bottom: 150px;
+    }
+    75% {
+        bottom: 100px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+
+.upbtn {
+    font-size: 30px;
+    background-color: #ffffff8f;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 22px;
+}
+#reload,#start{
+    padding: 5px 10px;
+    color: black;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .sky #mario{
+        height: 45px;
+    }
+    .sky #enemy{
+        height: 30px;
+    }
+    
+  }
+  
